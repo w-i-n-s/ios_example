@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB004ABB18980ADC00FA9FB7 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004A9318980ADC00FA9FB7 /* NSObject+SBJson.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB004ABC18980ADC00FA9FB7 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004A9618980ADC00FA9FB7 /* SBJsonParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB004ABD18980ADC00FA9FB7 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004A9818980ADC00FA9FB7 /* SBJsonStreamParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB004ABE18980ADC00FA9FB7 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004A9A18980ADC00FA9FB7 /* SBJsonStreamParserAccumulator.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB004ABF18980ADC00FA9FB7 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004A9C18980ADC00FA9FB7 /* SBJsonStreamParserAdapter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB004AC018980ADC00FA9FB7 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004A9E18980ADC00FA9FB7 /* SBJsonStreamParserState.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB004AC118980ADC00FA9FB7 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004AA018980ADC00FA9FB7 /* SBJsonStreamWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB004AC218980ADC00FA9FB7 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004AA218980ADC00FA9FB7 /* SBJsonStreamWriterAccumulator.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB004AC318980ADC00FA9FB7 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004AA418980ADC00FA9FB7 /* SBJsonStreamWriterState.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB004AC418980ADC00FA9FB7 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004AA618980ADC00FA9FB7 /* SBJsonTokeniser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB004AC518980ADC00FA9FB7 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004AA818980ADC00FA9FB7 /* SBJsonUTF8Stream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB004AC618980ADC00FA9FB7 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004AAA18980ADC00FA9FB7 /* SBJsonWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB004AC718980ADC00FA9FB7 /* OKFriends.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004AAE18980ADC00FA9FB7 /* OKFriends.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB004AC818980ADC00FA9FB7 /* Odnoklassniki.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004AB018980ADC00FA9FB7 /* Odnoklassniki.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB004AC918980ADC00FA9FB7 /* OKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004AB218980ADC00FA9FB7 /* OKRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB004ACA18980ADC00FA9FB7 /* OKRequestConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004AB418980ADC00FA9FB7 /* OKRequestConnection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB004ACB18980ADC00FA9FB7 /* OKSession.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004AB618980ADC00FA9FB7 /* OKSession.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB004ACC18980ADC00FA9FB7 /* OKTokenCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004AB818980ADC00FA9FB7 /* OKTokenCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB004ACD18980ADC00FA9FB7 /* OKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004ABA18980ADC00FA9FB7 /* OKUtils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		EBE614631897A97B00CA76A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE614621897A97B00CA76A4 /* Foundation.framework */; };
 		EBE614651897A97B00CA76A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE614641897A97B00CA76A4 /* CoreGraphics.framework */; };
 		EBE614671897A97B00CA76A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE614661897A97B00CA76A4 /* UIKit.framework */; };
@@ -15,7 +34,6 @@
 		EBE614731897A97B00CA76A4 /* ALAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE614721897A97B00CA76A4 /* ALAppDelegate.m */; };
 		EBE614761897A97B00CA76A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE614741897A97B00CA76A4 /* Main.storyboard */; };
 		EBE614791897A97B00CA76A4 /* ALFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE614781897A97B00CA76A4 /* ALFirstViewController.m */; };
-		EBE6147C1897A97B00CA76A4 /* ALSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE6147B1897A97B00CA76A4 /* ALSecondViewController.m */; };
 		EBE6147E1897A97B00CA76A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE6147D1897A97B00CA76A4 /* Images.xcassets */; };
 		EBE614851897A97B00CA76A4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE614841897A97B00CA76A4 /* XCTest.framework */; };
 		EBE614861897A97B00CA76A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE614621897A97B00CA76A4 /* Foundation.framework */; };
@@ -35,12 +53,50 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB004A9218980ADC00FA9FB7 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		EB004A9318980ADC00FA9FB7 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		EB004A9418980ADC00FA9FB7 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		EB004A9518980ADC00FA9FB7 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		EB004A9618980ADC00FA9FB7 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		EB004A9718980ADC00FA9FB7 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		EB004A9818980ADC00FA9FB7 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		EB004A9918980ADC00FA9FB7 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		EB004A9A18980ADC00FA9FB7 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		EB004A9B18980ADC00FA9FB7 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		EB004A9C18980ADC00FA9FB7 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		EB004A9D18980ADC00FA9FB7 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		EB004A9E18980ADC00FA9FB7 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		EB004A9F18980ADC00FA9FB7 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		EB004AA018980ADC00FA9FB7 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		EB004AA118980ADC00FA9FB7 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		EB004AA218980ADC00FA9FB7 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		EB004AA318980ADC00FA9FB7 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		EB004AA418980ADC00FA9FB7 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		EB004AA518980ADC00FA9FB7 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		EB004AA618980ADC00FA9FB7 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		EB004AA718980ADC00FA9FB7 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		EB004AA818980ADC00FA9FB7 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		EB004AA918980ADC00FA9FB7 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		EB004AAA18980ADC00FA9FB7 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		EB004AAD18980ADC00FA9FB7 /* OKFriends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKFriends.h; sourceTree = "<group>"; };
+		EB004AAE18980ADC00FA9FB7 /* OKFriends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKFriends.m; sourceTree = "<group>"; };
+		EB004AAF18980ADC00FA9FB7 /* Odnoklassniki.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Odnoklassniki.h; sourceTree = "<group>"; };
+		EB004AB018980ADC00FA9FB7 /* Odnoklassniki.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Odnoklassniki.m; sourceTree = "<group>"; };
+		EB004AB118980ADC00FA9FB7 /* OKRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKRequest.h; sourceTree = "<group>"; };
+		EB004AB218980ADC00FA9FB7 /* OKRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKRequest.m; sourceTree = "<group>"; };
+		EB004AB318980ADC00FA9FB7 /* OKRequestConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKRequestConnection.h; sourceTree = "<group>"; };
+		EB004AB418980ADC00FA9FB7 /* OKRequestConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKRequestConnection.m; sourceTree = "<group>"; };
+		EB004AB518980ADC00FA9FB7 /* OKSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKSession.h; sourceTree = "<group>"; };
+		EB004AB618980ADC00FA9FB7 /* OKSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKSession.m; sourceTree = "<group>"; };
+		EB004AB718980ADC00FA9FB7 /* OKTokenCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKTokenCache.h; sourceTree = "<group>"; };
+		EB004AB818980ADC00FA9FB7 /* OKTokenCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKTokenCache.m; sourceTree = "<group>"; };
+		EB004AB918980ADC00FA9FB7 /* OKUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKUtils.h; sourceTree = "<group>"; };
+		EB004ABA18980ADC00FA9FB7 /* OKUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKUtils.m; sourceTree = "<group>"; };
 		EBE6145F1897A97B00CA76A4 /* Odnoklassniki iOS example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Odnoklassniki iOS example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE614621897A97B00CA76A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EBE614641897A97B00CA76A4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		EBE614661897A97B00CA76A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EBE6146A1897A97B00CA76A4 /* Odnoklassniki iOS example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Odnoklassniki iOS example-Info.plist"; sourceTree = "<group>"; };
-		EBE6146C1897A97B00CA76A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EBE6146E1897A97B00CA76A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EBE614701897A97B00CA76A4 /* Odnoklassniki iOS example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Odnoklassniki iOS example-Prefix.pch"; sourceTree = "<group>"; };
 		EBE614711897A97B00CA76A4 /* ALAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALAppDelegate.h; sourceTree = "<group>"; };
@@ -48,14 +104,17 @@
 		EBE614751897A97B00CA76A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBE614771897A97B00CA76A4 /* ALFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALFirstViewController.h; sourceTree = "<group>"; };
 		EBE614781897A97B00CA76A4 /* ALFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALFirstViewController.m; sourceTree = "<group>"; };
-		EBE6147A1897A97B00CA76A4 /* ALSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALSecondViewController.h; sourceTree = "<group>"; };
-		EBE6147B1897A97B00CA76A4 /* ALSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALSecondViewController.m; sourceTree = "<group>"; };
 		EBE6147D1897A97B00CA76A4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EBE614831897A97B00CA76A4 /* Odnoklassniki iOS exampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Odnoklassniki iOS exampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE614841897A97B00CA76A4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		EBE6148C1897A97B00CA76A4 /* Odnoklassniki iOS exampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Odnoklassniki iOS exampleTests-Info.plist"; sourceTree = "<group>"; };
-		EBE6148E1897A97B00CA76A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EBE614901897A97B00CA76A4 /* Odnoklassniki_iOS_exampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Odnoklassniki_iOS_exampleTests.m; sourceTree = "<group>"; };
+		EBE6149A1897A9D700CA76A4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		EBE6149B1897A9D700CA76A4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EBE6149C1897A9D700CA76A4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EBE6149D1897AA0500CA76A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		EBE6149E1897AA0500CA76A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EBE6149F1897AA0500CA76A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +141,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB004A9118980ADC00FA9FB7 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				EB004A9218980ADC00FA9FB7 /* NSObject+SBJson.h */,
+				EB004A9318980ADC00FA9FB7 /* NSObject+SBJson.m */,
+				EB004A9418980ADC00FA9FB7 /* SBJson.h */,
+				EB004A9518980ADC00FA9FB7 /* SBJsonParser.h */,
+				EB004A9618980ADC00FA9FB7 /* SBJsonParser.m */,
+				EB004A9718980ADC00FA9FB7 /* SBJsonStreamParser.h */,
+				EB004A9818980ADC00FA9FB7 /* SBJsonStreamParser.m */,
+				EB004A9918980ADC00FA9FB7 /* SBJsonStreamParserAccumulator.h */,
+				EB004A9A18980ADC00FA9FB7 /* SBJsonStreamParserAccumulator.m */,
+				EB004A9B18980ADC00FA9FB7 /* SBJsonStreamParserAdapter.h */,
+				EB004A9C18980ADC00FA9FB7 /* SBJsonStreamParserAdapter.m */,
+				EB004A9D18980ADC00FA9FB7 /* SBJsonStreamParserState.h */,
+				EB004A9E18980ADC00FA9FB7 /* SBJsonStreamParserState.m */,
+				EB004A9F18980ADC00FA9FB7 /* SBJsonStreamWriter.h */,
+				EB004AA018980ADC00FA9FB7 /* SBJsonStreamWriter.m */,
+				EB004AA118980ADC00FA9FB7 /* SBJsonStreamWriterAccumulator.h */,
+				EB004AA218980ADC00FA9FB7 /* SBJsonStreamWriterAccumulator.m */,
+				EB004AA318980ADC00FA9FB7 /* SBJsonStreamWriterState.h */,
+				EB004AA418980ADC00FA9FB7 /* SBJsonStreamWriterState.m */,
+				EB004AA518980ADC00FA9FB7 /* SBJsonTokeniser.h */,
+				EB004AA618980ADC00FA9FB7 /* SBJsonTokeniser.m */,
+				EB004AA718980ADC00FA9FB7 /* SBJsonUTF8Stream.h */,
+				EB004AA818980ADC00FA9FB7 /* SBJsonUTF8Stream.m */,
+				EB004AA918980ADC00FA9FB7 /* SBJsonWriter.h */,
+				EB004AAA18980ADC00FA9FB7 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		EB004AAB18980ADC00FA9FB7 /* Odnoklassniki SDK */ = {
+			isa = PBXGroup;
+			children = (
+				EB004AAC18980ADC00FA9FB7 /* Friends */,
+				EB004AAF18980ADC00FA9FB7 /* Odnoklassniki.h */,
+				EB004AB018980ADC00FA9FB7 /* Odnoklassniki.m */,
+				EB004AB118980ADC00FA9FB7 /* OKRequest.h */,
+				EB004AB218980ADC00FA9FB7 /* OKRequest.m */,
+				EB004AB318980ADC00FA9FB7 /* OKRequestConnection.h */,
+				EB004AB418980ADC00FA9FB7 /* OKRequestConnection.m */,
+				EB004AB518980ADC00FA9FB7 /* OKSession.h */,
+				EB004AB618980ADC00FA9FB7 /* OKSession.m */,
+				EB004AB718980ADC00FA9FB7 /* OKTokenCache.h */,
+				EB004AB818980ADC00FA9FB7 /* OKTokenCache.m */,
+				EB004AB918980ADC00FA9FB7 /* OKUtils.h */,
+				EB004ABA18980ADC00FA9FB7 /* OKUtils.m */,
+			);
+			path = "Odnoklassniki SDK";
+			sourceTree = "<group>";
+		};
+		EB004AAC18980ADC00FA9FB7 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				EB004AAD18980ADC00FA9FB7 /* OKFriends.h */,
+				EB004AAE18980ADC00FA9FB7 /* OKFriends.m */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
 		EBE614561897A97B00CA76A4 = {
 			isa = PBXGroup;
 			children = (
@@ -115,13 +235,13 @@
 		EBE614681897A97B00CA76A4 /* Odnoklassniki iOS example */ = {
 			isa = PBXGroup;
 			children = (
+				EB004A9118980ADC00FA9FB7 /* JSON */,
+				EB004AAB18980ADC00FA9FB7 /* Odnoklassniki SDK */,
 				EBE614711897A97B00CA76A4 /* ALAppDelegate.h */,
 				EBE614721897A97B00CA76A4 /* ALAppDelegate.m */,
 				EBE614741897A97B00CA76A4 /* Main.storyboard */,
 				EBE614771897A97B00CA76A4 /* ALFirstViewController.h */,
 				EBE614781897A97B00CA76A4 /* ALFirstViewController.m */,
-				EBE6147A1897A97B00CA76A4 /* ALSecondViewController.h */,
-				EBE6147B1897A97B00CA76A4 /* ALSecondViewController.m */,
 				EBE6147D1897A97B00CA76A4 /* Images.xcassets */,
 				EBE614691897A97B00CA76A4 /* Supporting Files */,
 			);
@@ -217,6 +337,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = EBE614561897A97B00CA76A4;
 			productRefGroup = EBE614601897A97B00CA76A4 /* Products */;
@@ -255,10 +376,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB004AC418980ADC00FA9FB7 /* SBJsonTokeniser.m in Sources */,
 				EBE6146F1897A97B00CA76A4 /* main.m in Sources */,
+				EB004AC018980ADC00FA9FB7 /* SBJsonStreamParserState.m in Sources */,
 				EBE614791897A97B00CA76A4 /* ALFirstViewController.m in Sources */,
+				EB004AC618980ADC00FA9FB7 /* SBJsonWriter.m in Sources */,
 				EBE614731897A97B00CA76A4 /* ALAppDelegate.m in Sources */,
-				EBE6147C1897A97B00CA76A4 /* ALSecondViewController.m in Sources */,
+				EB004ABE18980ADC00FA9FB7 /* SBJsonStreamParserAccumulator.m in Sources */,
+				EB004ABC18980ADC00FA9FB7 /* SBJsonParser.m in Sources */,
+				EB004ABB18980ADC00FA9FB7 /* NSObject+SBJson.m in Sources */,
+				EB004ACB18980ADC00FA9FB7 /* OKSession.m in Sources */,
+				EB004AC518980ADC00FA9FB7 /* SBJsonUTF8Stream.m in Sources */,
+				EB004AC918980ADC00FA9FB7 /* OKRequest.m in Sources */,
+				EB004AC218980ADC00FA9FB7 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				EB004ACC18980ADC00FA9FB7 /* OKTokenCache.m in Sources */,
+				EB004AC718980ADC00FA9FB7 /* OKFriends.m in Sources */,
+				EB004ACD18980ADC00FA9FB7 /* OKUtils.m in Sources */,
+				EB004ACA18980ADC00FA9FB7 /* OKRequestConnection.m in Sources */,
+				EB004AC118980ADC00FA9FB7 /* SBJsonStreamWriter.m in Sources */,
+				EB004AC318980ADC00FA9FB7 /* SBJsonStreamWriterState.m in Sources */,
+				EB004ABD18980ADC00FA9FB7 /* SBJsonStreamParser.m in Sources */,
+				EB004AC818980ADC00FA9FB7 /* Odnoklassniki.m in Sources */,
+				EB004ABF18980ADC00FA9FB7 /* SBJsonStreamParserAdapter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +423,8 @@
 		EBE6146B1897A97B00CA76A4 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EBE6146C1897A97B00CA76A4 /* en */,
+				EBE6149B1897A9D700CA76A4 /* ru */,
+				EBE6149E1897AA0500CA76A4 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -293,6 +433,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				EBE614751897A97B00CA76A4 /* Base */,
+				EBE6149A1897A9D700CA76A4 /* ru */,
+				EBE6149D1897AA0500CA76A4 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -300,7 +442,8 @@
 		EBE6148D1897A97B00CA76A4 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EBE6148E1897A97B00CA76A4 /* en */,
+				EBE6149C1897A9D700CA76A4 /* ru */,
+				EBE6149F1897AA0500CA76A4 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -341,7 +484,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -374,7 +517,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -458,7 +601,7 @@
 				EBE614931897A97B00CA76A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		EBE614941897A97B00CA76A4 /* Build configuration list for PBXNativeTarget "Odnoklassniki iOS example" */ = {
 			isa = XCConfigurationList;
@@ -467,6 +610,7 @@
 				EBE614961897A97B00CA76A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		EBE614971897A97B00CA76A4 /* Build configuration list for PBXNativeTarget "Odnoklassniki iOS exampleTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +619,7 @@
 				EBE614991897A97B00CA76A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OKRequest.h"
+#import "OKSession.h"
+#import "Odnoklassniki.h"
 
-@interface ALFirstViewController : UIViewController
+static NSString * appID = @"";
+static NSString * appSecret = @"";
+static NSString * appKey = @"";
+
+@interface ALFirstViewController : UIViewController <OKSessionDelegate, OKRequestDelegate,UITableViewDelegate, UITableViewDataSource>
+{
+    Odnoklassniki *_api;
+    NSArray *friendIDs;
+}
+
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OKSession.h"
 
 @interface ALAppDelegate : UIResponder <UIApplicationDelegate>
 
