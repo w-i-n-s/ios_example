@@ -123,8 +123,8 @@
 }
 
 /*
- * Method will be called after success logout ([_api logout])
- * Метод будет вызван после успешной авторизации ([_api logout])
+ * Method will be called after logout ([_api logout])
+ * Метод будет вызван после выхода пользователя ([_api logout])
 */
 -(void)okDidLogout {
 	[self.sessionStatusLabel setText:@"Not logged in"];
