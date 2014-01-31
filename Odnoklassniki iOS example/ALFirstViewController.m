@@ -176,10 +176,36 @@
             });
         }
         if ([request.url rangeOfString:@"/friends/get"].location != NSNotFound && resArr) {
-            friendIDs = resArr;
-            NSLog(@"Friends = %@", friendIDs);
+            //friends = resArr;
+            NSLog(@"Res arr = %@", [resArr description]);
+            int maxStepNumber = [friends count] / 100;
+            for (int currentStep = 0; currentStep <= maxStepNumber; currentStep++) {
+                NSRange range;
+                range.location = currentStep*100;
+                range.length = (currentStep == maxStepNumber) ? ([resArr count] % 100) : 100;
+                OKRequest *request = [Odnoklassniki requestWithMethodName:@"users.getInfo"
+                                                                andParams:[NSMutableDictionary dictionaryWithDictionary:@{@"uids":[[resArr subarrayWithRange:range]componentsJoinedByString:@","],@"fields": @"first_name,last_name,uid,online,pic_1"}]
+                                                            andHttpMethod:@"GET"
+                                                              andDelegate:self];
+                [request load];
+            }
         }
-        [_tableView reloadData];
+        if ([request.url rangeOfString:@"/users/getInfo"].location != NSNotFound) {
+            NSLog(@"Users.getInfo res = %@", (NSString*)result);
+            friends = [[NSMutableArray alloc]init];
+
+            for (NSString *uid in resArr) {
+                ALFriend *friend = [[ALFriend alloc]initWithUid:[((NSDictionary*)uid) objectForKey:@"uid"]];
+                friend.name = [((NSDictionary*)uid) objectForKey:@"first_name"];
+                friend.surname = [((NSDictionary*)uid) objectForKey:@"last_name"];
+                friend.pic_1Url = [((NSDictionary*)uid) objectForKey:@"pic_1"];
+                if ([((NSDictionary*)uid) objectForKey:@"online"]) {
+                    friend.isOnline = true;
+                }
+                [friends addObject:friend];
+            }
+            [_tableView reloadData];
+        }
 
     }
 }
@@ -196,21 +222,38 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [friendIDs count];
+    return [friends count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *simpleTableIdentifier = @"SimpleTableItem";
+    @autoreleasepool {
+        static NSString *simpleTableIdentifier = @"SimpleTableItem";
+        
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
-    }
+        if (cell == nil) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:simpleTableIdentifier];
+        }
     
-    cell.textLabel.text = [friendIDs objectAtIndex:indexPath.row];
+        cell.textLabel.text = [NSString stringWithFormat:@"%@ %@", ((ALFriend*)[friends objectAtIndex:indexPath.row]).name, ((ALFriend*)[friends objectAtIndex:indexPath.row]).surname];
+        if (((ALFriend*)[friends objectAtIndex:indexPath.row]).isOnline) {
+            cell.detailTextLabel.text = @"online";
+        }
+        
+    
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            NSURL *url = [NSURL URLWithString:((ALFriend*)[friends objectAtIndex:indexPath.row]).pic_1Url];
+            NSData *data = [NSData dataWithContentsOfURL:url];
+            UIImage *img = [[UIImage alloc] initWithData:data];
+            dispatch_sync(dispatch_get_main_queue(), ^{
+                cell.imageView.image = img;
+                [cell setNeedsLayout];
+            });
+        });
     return cell;
+    }
 }
 
 
@@ -233,7 +276,7 @@
         [self.countryTextField setText:@""];
         UIImage * unknownUserPicture = [UIImage imageNamed: @"q.png"];
         self.photo.image = unknownUserPicture;
-        friendIDs = nil;
+        friends = nil;
         [_tableView reloadData];
     }
 }

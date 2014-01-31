@@ -26,6 +26,7 @@
 		EB004ACB18980ADC00FA9FB7 /* OKSession.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004AB618980ADC00FA9FB7 /* OKSession.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		EB004ACC18980ADC00FA9FB7 /* OKTokenCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004AB818980ADC00FA9FB7 /* OKTokenCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		EB004ACD18980ADC00FA9FB7 /* OKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004ABA18980ADC00FA9FB7 /* OKUtils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EBAD4695189B9F0000440CF4 /* ALFriend.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAD4694189B9F0000440CF4 /* ALFriend.m */; };
 		EBE614631897A97B00CA76A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE614621897A97B00CA76A4 /* Foundation.framework */; };
 		EBE614651897A97B00CA76A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE614641897A97B00CA76A4 /* CoreGraphics.framework */; };
 		EBE614671897A97B00CA76A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE614661897A97B00CA76A4 /* UIKit.framework */; };
@@ -92,6 +93,8 @@
 		EB004AB818980ADC00FA9FB7 /* OKTokenCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKTokenCache.m; sourceTree = "<group>"; };
 		EB004AB918980ADC00FA9FB7 /* OKUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKUtils.h; sourceTree = "<group>"; };
 		EB004ABA18980ADC00FA9FB7 /* OKUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKUtils.m; sourceTree = "<group>"; };
+		EBAD4693189B9F0000440CF4 /* ALFriend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALFriend.h; sourceTree = "<group>"; };
+		EBAD4694189B9F0000440CF4 /* ALFriend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALFriend.m; sourceTree = "<group>"; };
 		EBE6145F1897A97B00CA76A4 /* Odnoklassniki iOS example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Odnoklassniki iOS example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE614621897A97B00CA76A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EBE614641897A97B00CA76A4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -242,6 +245,8 @@
 				EBE614741897A97B00CA76A4 /* Main.storyboard */,
 				EBE614771897A97B00CA76A4 /* ALFirstViewController.h */,
 				EBE614781897A97B00CA76A4 /* ALFirstViewController.m */,
+				EBAD4693189B9F0000440CF4 /* ALFriend.h */,
+				EBAD4694189B9F0000440CF4 /* ALFriend.m */,
 				EBE6147D1897A97B00CA76A4 /* Images.xcassets */,
 				EBE614691897A97B00CA76A4 /* Supporting Files */,
 			);
@@ -382,6 +387,7 @@
 				EBE614791897A97B00CA76A4 /* ALFirstViewController.m in Sources */,
 				EB004AC618980ADC00FA9FB7 /* SBJsonWriter.m in Sources */,
 				EBE614731897A97B00CA76A4 /* ALAppDelegate.m in Sources */,
+				EBAD4695189B9F0000440CF4 /* ALFriend.m in Sources */,
 				EB004ABE18980ADC00FA9FB7 /* SBJsonStreamParserAccumulator.m in Sources */,
 				EB004ABC18980ADC00FA9FB7 /* SBJsonParser.m in Sources */,
 				EB004ABB18980ADC00FA9FB7 /* NSObject+SBJson.m in Sources */,
