@@ -176,8 +176,6 @@
             });
         }
         if ([request.url rangeOfString:@"/friends/get"].location != NSNotFound && resArr) {
-            //friends = resArr;
-            NSLog(@"Res arr = %@", [resArr description]);
             int maxStepNumber = [friends count] / 100;
             for (int currentStep = 0; currentStep <= maxStepNumber; currentStep++) {
                 NSRange range;
@@ -191,7 +189,6 @@
             }
         }
         if ([request.url rangeOfString:@"/users/getInfo"].location != NSNotFound) {
-            NSLog(@"Users.getInfo res = %@", (NSString*)result);
             friends = [[NSMutableArray alloc]init];
 
             for (NSString *uid in resArr) {
