@@ -133,7 +133,7 @@
     
 }
 
-#pragma mark - OKRequestDeligate
+#pragma mark - OKRequestDelegate
 
 /*
  * Method will be called after OKRequest got correct response
